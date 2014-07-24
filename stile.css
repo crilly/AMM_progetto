@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-lug-2014, 17.48.02
+    Author     : Cristin
+*/
+
+body {
+    background-image: url('../immagini/astratto.jpg');	
+    max-width: 900px;	
+    margin: 0px auto;
+}
+
+/* Stili per i titoli h1 */
+h1 {
+    color: deeppink;
+    font: 24px Helvetica, Arial, serif;
+}
+
+h3 {
+    color: white;
+}
+
+#logo {
+    height: 160px;
+    width: 500px;
+    padding: 10px 20px 30px 0px;
+    border-right: 2px solid #1E90FF;
+    float: left;
+}
+
+div.input{
+    display: inline;
+    float: right;
+    text-align: left;
+    margin-right: 15%;
+    padding: 0px 5px 30px 5px;   
+}
+
+div.header {
+    //background-color: white;
+    color: deepskyblue;    
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+div.header, div.container, div.footer {	
+    width: 100%;
+}
+
+div.container-body-left {
+    float: left;
+    //border-right: 2px solid #1E90FF;
+    
+}
+
+div.container-body-right {
+    float: right;
+    border-left: 2px solid #1E90FF;
+    min-width: 300px;
+    padding-left: 30px;
+}
+
+#menu{
+    color: white;
+    margin: auto;
+    padding: auto;
+    content: auto;
+    border: auto;
+    //background: crimson;
+    border-bottom: 2px solid #1E90FF;
+    border-top: 2px solid #1E90FF;
+    width: auto;
+}
+
+#menu li{
+    display: inline;
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    font: 18px Helvetica, Arial, serif;
+}
+
+#menu li a {
+    color: deeppink;
+    display:inline;
+    padding:2%;
+    font-weight: bold;
+    height: 10px;
+    line-height: 0px;
+    text-decoration: none;
+}
+
+
+#menu a:link#evidenziato, 
+#menu a:visited#evidenziato, #menu a:hover{
+    //border-top: 2px solid #c00;
+    color: aqua;
+}
+
