@@ -33,8 +33,8 @@ and open the template in the editor.
                 </div>
 
                 <div class="container-body">
-                    <h1>Questa &egrave; la pagina di accesso al progetto
-                        di Amministrazione di Sistema
+                    <h1>Questa &egrave; la pagina di accesso al</br>
+                        progetto di Amministrazione di Sistema
                     </h1>
                 </div>
             </div>
