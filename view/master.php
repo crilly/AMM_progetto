@@ -11,14 +11,14 @@ and open the template in the editor.
         <meta http-equip="Content-Type"  content="text/html">    
         <meta charset="UTF-8">
         <title>Videoteca Online</title> 
-        <link rel="stylesheet" type="text/css" href="css/stile.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/stile.css"> 
     </head>
 
     <body>
         <div class="body">
             <div class="header">
                 <div align="center">
-                    <img src="immagini/titolo.png" alt="VideotecaOnline" id="logo">
+                    <img src="../immagini/titolo.png" alt="VideotecaOnline" id="logo">
                 </div>
 
             </div>
@@ -26,11 +26,9 @@ and open the template in the editor.
             <div class="container">
                 <div id="menu">
                     <ul>
-                        <li> <a href="source.html">Home</a></li>
-                        <li> <a href="info.html">Info</a></li>
+                        <li> <a href="http://spano.sc.unica.it/amm2014/sannaCristin/">Home</a></li>
                         <li> <a href="source.html">Lista Film</a></li>
-                        <li> <a href="source.html">Carrello</a></li>
-                        <li> <a href="source.html">Ricerca</a></li>
+                        <li> <a href="source.html">Noleggia Film</a></li>
                     </ul>
                 </div>
 
