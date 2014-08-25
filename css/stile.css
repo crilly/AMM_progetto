@@ -9,8 +9,8 @@ and open the template in the editor.
 */
 
 body {
-    background-image: url('immagini/sfondo.jpg');	
-    max-width: 900px;	
+    background-color: black;	
+    max-width: 900px;
     margin: 0px auto;
 }
 

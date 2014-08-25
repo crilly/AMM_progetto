@@ -10,7 +10,7 @@ and open the template in the editor.
     <head>   
         <meta http-equip="Content-Type"  content="text/html">    
         <meta charset="UTF-8">
-        <title>Videoteca Online</title> 
+        <title>Videoteca ooOnline</title> 
         <link rel="stylesheet" type="text/css" href="css/stile.css"> 
     </head>
 
@@ -20,7 +20,7 @@ and open the template in the editor.
                 <img src="immagini/titolo.png" alt="VideotecaOnline" id="logo"/> 
                 <div class="input">
                     <h1>Login</h1>
-                    <form method="post" action="docente_reg_esami.html">       
+                    <form method="post">       
                         <label for="username">Username</label> 
                         <input name="username" id="username" type="text"/>
                         <br/> <br/>
@@ -43,7 +43,11 @@ and open the template in the editor.
                     </ul>
                 </div>
                     
-                <div class="container-body"></div>
+                <div class="container-body">
+                    <h1>Questa &egrave; la pagina di accesso al progetto
+                    di Amministrazione di Sistema
+                    </h1>
+                </div>
             </div>
         </div>
         
