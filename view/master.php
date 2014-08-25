@@ -26,9 +26,8 @@ and open the template in the editor.
             <div class="container">
                 <div id="menu">
                     <ul>
-                        <li> <a href="http://spano.sc.unica.it/amm2014/sannaCristin/">Home</a></li>
-                        <li> <a href="source.html">Lista Film</a></li>
-                        <li> <a href="source.html">Noleggia Film</a></li>
+                        <li> <a href="http://spano.sc.unica.it/amm2014/sannaCristin/view/master.php">Home</a></li>
+                        <li> <a href="">Lista Film</a></li>
                     </ul>
                 </div>
 

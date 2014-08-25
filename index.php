@@ -17,13 +17,11 @@
             <li>Visualizzare l'elenco dei film</li>
             <li>Aggiungere film alla videoteca</li>
             <li>Rimuovere film dalla videoteca</li>
-            <li>Visualizzare lo storico prenotazioni di tutti gli utenti</li>
         </ul>
         I clienti possono:
         <ul>
             <li>Visualizzare l'elenco dei film disponibili</li>
             <li>Noleggiare un film</li>
-            <li>Visualizzare lo storico dei propri noleggi</li>
         </ul>
     </p>
     <p>
