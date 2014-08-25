@@ -17,19 +17,10 @@ and open the template in the editor.
     <body>
         <div class="body">
             <div class="header">
-                <img src="immagini/titolo.png" alt="VideotecaOnline" id="logo"/> 
-                <div class="input">
-                    <h1>Login</h1>
-                    <form method="post">       
-                        <label for="username">Username</label> 
-                        <input name="username" id="username" type="text"/>
-                        <br/> <br/>
-                        <label for="password">Password </label> 
-                        <input name="password" id="password" type="password"/>
-                        <br/> <br/>  
-                        <input type="submit" value="Accedi"/>  
-                    </form> 
+                <div align="center">
+                    <img src="immagini/titolo.png" alt="VideotecaOnline" id="logo">
                 </div>
+
             </div>
 
             <div class="container">
@@ -42,19 +33,19 @@ and open the template in the editor.
                         <li> <a href="source.html">Ricerca</a></li>
                     </ul>
                 </div>
-                    
+
                 <div class="container-body">
                     <h1>Questa &egrave; la pagina di accesso al progetto
-                    di Amministrazione di Sistema
+                        di Amministrazione di Sistema
                     </h1>
                 </div>
             </div>
         </div>
-        
+
         <div class="footer">
-            
+
         </div>
-    
-</body>
+
+    </body>
 
 </html>

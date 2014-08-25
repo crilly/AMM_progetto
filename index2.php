@@ -5,9 +5,9 @@
         <title>Videoteca Online</title>
     </head>
     <body>
-        <h1>Accesso al progetto</h1>
+        <h1>Link al progetto</h1>
         <p>
-            <a href="http://spano.sc.unica.it/amm2014/sannaCristin/php">Login</a>
+            <a href="http://spano.sc.unica.it/amm2014/sannaCristin/">Login</a>
         </p>
         <p>
         <h3>Descrizione</h3>
