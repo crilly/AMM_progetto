@@ -17,7 +17,7 @@ body {
 /* Stili per i titoli h1 */
 h1 {
     color:cornsilk;
-    font: 24px Helvetica, Arial, serif;
+    font: 20px Helvetica, Arial, serif;
 }
 
 h3 {
@@ -32,7 +32,6 @@ h3 {
 }
 
 div.header {
-    //background-color: white;
     color:bisque;    
     width: 500px;
     height: 200px;
@@ -57,7 +56,7 @@ div.container-body-right {
 }
 
 #menu{
-    color: white;
+    color:hotpink;
     margin: auto;
     padding: auto;
     content: auto;
@@ -66,6 +65,7 @@ div.container-body-right {
     border-bottom: 2px solid #1E90FF;
     border-top: 2px solid #1E90FF;
     width: auto;
+    font: 18px Helvetica, Arial, serif;
 }
 
 #menu li{
