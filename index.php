@@ -10,7 +10,7 @@ and open the template in the editor.
     <head>   
         <meta http-equip="Content-Type"  content="text/html">    
         <meta charset="UTF-8">
-        <title>Videoteca Online</title> 
+        <title>Videoteca Onlines</title> 
         <link rel="stylesheet" type="text/css" href="css/stile.css"> 
     </head>
 
