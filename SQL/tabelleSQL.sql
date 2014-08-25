@@ -79,8 +79,7 @@ CREATE TABLE IF NOT EXISTS `utenti` (
 
 INSERT INTO `utenti` (`ID`, `user`, `password`) VALUES
 (1, 'cliente', 'sanna'),
-(2, 'cliente1', 'spano'),
-(3, 'venditore', 'sanna');
+(2, 'venditore', 'sanna');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

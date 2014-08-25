@@ -11,53 +11,44 @@
         </p>
         <p>
         <h3>Descrizione</h3>
-        L'applicazione gestisce le funzionalità di un autonoleggio. Gli utenti sono divisi in clienti e dipendenti.</br>
-        I dipendenti possono:
+        L'applicazione gestisce le funzionalità di una videoteca online. Gli utenti sono divisi in clienti e venditori.</br>
+        I venditori possono:
         <ul>
-            <li>Visualizzare il parco auto</li>
-            <li>Aggiungere veicoli al parco auto</li>
-            <li>Rimuovere veicoli dal parco auto</li>
+            <li>Visualizzare l'elenco dei film</li>
+            <li>Aggiungere film alla videoteca</li>
+            <li>Rimuovere film dalla videoteca</li>
             <li>Visualizzare lo storico prenotazioni di tutti gli utenti</li>
-            <li>Gestire la propria anagrafica</li>
         </ul>
         I clienti possono:
         <ul>
-            <li>Visualizzare il parco auto</li>
-            <li>Registrare un noleggio</li>
+            <li>Visualizzare l'elenco dei film disponibili</li>
+            <li>Noleggiare un film</li>
             <li>Visualizzare lo storico dei propri noleggi</li>
         </ul>
     </p>
     <p>
-    <h3>Note</h3>
-    <ul>
-        <li>Le date sono nel formato Y-m-d</li>
-        <li>Il costo giornaliero è una caratteristica del modello di veicolo, non del singolo veicolo</li>
-    </ul>
-</p>
-<p>
-<h3>Requisiti soddisfatti</h3>
-<ol>
-    <li>Utilizzo di HTML e CSS</li>
-    <li>Utilizzo di PHP e MySQL</li>
-    <li>Utilizzo del pattern MVC</li>
-    <li>Dueue ruoli (cliente e dipendente)</li>
-    <li>Transazione per il salvataggio di un nuovo noleggio (metodo nuovo della classe NoleggioFactory)</li>
-    <li>Caricamento ajax dei risultati filtrati dello storico dei noleggi (ruolo dipendente)</li>
-</ol>
+    <h3>Requisiti soddisfatti</h3>
+    <ol>
+        <li>Utilizzo di HTML e CSS</li>
+        <li>Utilizzo di PHP e MySQL</li>
+        <li>Utilizzo del pattern MVC</li>
+        <li>Due ruoli (cliente e venditore)</li>
+        <li>Transazione per il salvataggio di un nuovo noleggio</li>
+    </ol>
 </p>
 <p>
 <h3>Utenti</h3>
 <ul>
-    <li>Dipendente
+    <li>Venditore
         <ul>
-            <li>username: stefano</li>
-            <li>passowrd: stefano</li>
+            <li>username: venditore</li>
+            <li>passowrd: sanna</li>
         </ul>
     </li>
     <li>Cliente
         <ul>
-            <li>username: davide</li>
-            <li>passowrd: davide</li>
+            <li>username: cliente</li>
+            <li>passowrd: sanna</li>
         </ul>
     </li>
 </ul>
