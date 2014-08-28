@@ -17,7 +17,7 @@ body {
 /* Stili per i titoli h1 */
 h1 {
     color:cornsilk;
-    font: 20px Helvetica, Arial, serif;
+    font: 22px Helvetica, Arial, serif;
 }
 
 h3 {
@@ -65,7 +65,7 @@ div.container-body-right {
     border-bottom: 2px solid #1E90FF;
     border-top: 2px solid #1E90FF;
     width: auto;
-    font: 22px Helvetica, Arial, serif;
+    font: 20px Helvetica, Arial, serif;
 }
 
 #menu li{
