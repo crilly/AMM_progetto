@@ -16,7 +16,6 @@
         <ul>
             <li>Visualizzare l'elenco dei film</li>
             <li>Aggiungere film alla videoteca</li>
-            <li>Rimuovere film dalla videoteca</li>
         </ul>
         I clienti possono:
         <ul>

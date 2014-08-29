@@ -1,7 +1,7 @@
 <?php
 
 include_once 'User.php';
-include_once 'Settings.php';
+include_once '../Settings.php';
 
 class UserFactory {
 
@@ -40,7 +40,6 @@ utente.username utente_username,
 utente.password utente_password,
 utente.nome utente_nome,
 utente.cognome utente_cognome,
-utente.email utente_email,
 utente.ruolo utente_ruolo
 from utente
 where utente.username = ? and utente.password = ?";
@@ -71,7 +70,7 @@ where utente.username = ? and utente.password = ?";
         }
         $row = array();
         $bind = $stmt->bind_result(
-                $row['utente_id'], $row['utente_username'], $row['utente_password'], $row['utente_nome'], $row['utente_cognome'], $row['utente_email'], $row['utente_ruolo']);
+                $row['utente_id'], $row['utente_username'], $row['utente_password'], $row['utente_nome'], $row['utente_cognome'], $row['utente_ruolo']);
         if (!$bind) {
             error_log("[caricaUtenteDaStmt] Impossibile effettuare il binding in output");
             return null;
@@ -90,7 +89,6 @@ where utente.username = ? and utente.password = ?";
         $user->setPassword($row['utente_password']);
         $user->setNome($row['utente_nome']);
         $user->setCognome($row['utente_cognome']);
-        $user->setEmail($row['utente_email']);
         $user->setRuolo($row['utente_ruolo']);
         return $user;
     }
@@ -121,7 +119,6 @@ utente.username utente_username,
 utente.password utente_password,
 utente.nome utente_nome,
 utente.cognome utente_cognome,
-utente.email utente_email,
 utente.ruolo utente_ruolo
 from utente
 where utente.id = ?";
