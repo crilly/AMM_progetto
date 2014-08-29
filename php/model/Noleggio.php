@@ -66,5 +66,6 @@ class Noleggio {
         $this->fineNoleggio = $fineNoleggio;
         return true;
     }
-
 }
+
+?>
