@@ -53,12 +53,14 @@ INSERT INTO `film` (`ID`, `titolo`, `regista`, `anno`, `genere`, `prezzo`) VALUE
 --
 
 CREATE TABLE IF NOT EXISTS `noleggi` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `id_utenti` varchar(15) NOT NULL,
-  `id_film` varchar(20) NOT NULL,
-  `scadenza` date NOT NULL,
+  `ID` int(10) NOT NULL AUTO_INCREMENT,
+  `id_cliente` int(10) NOT NULL,
+  `id_film` int(10) NOT NULL,
+  `inizio_noleggio` date NOT NULL,
+  `fine_noleggio` date NOT NULL,
   PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
 
 -- --------------------------------------------------------
 

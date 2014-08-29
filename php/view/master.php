@@ -1,48 +1,46 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+include_once 'ViewDescriptor.php';
+include_once basename(__DIR__) . '/../settings.php';
+?>
 
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html>
+    <html>
 
-    <head>   
-        <meta http-equip="Content-Type"  content="text/html">    
-        <meta charset="UTF-8">
-        <title>Videoteca Online</title> 
-        <link rel="stylesheet" type="text/css" href="../css/stile.css"> 
-    </head>
+        <head>   
+            <title><?= $vd->getTitolo() ?></title>
+            <base href="<?= Settings::getApplicationPath() ?>php/"/>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" type="text/css" href="../css/stile.css">           
 
-    <body>
-        <div class="body">
-            <div class="header">
-                <div align="center">
-                    <img src="../immagini/titolo.png" alt="VideotecaOnline" id="logo">
+        </head>
+
+        <body>
+            <div id="page">
+
+                <div id="header">
+                    <?php
+                    $logo = $vd->getLogoFile();
+                    require "$logo";
+                    ?>
                 </div>
-
-            </div>
-
-            <div class="container">
                 <div id="menu">
-                    <ul>
-                        <li> <a href="http://spano.sc.unica.it/amm2014/sannaCristin/view/master.php">Home</a></li>
-                        <li> <a href="">Lista Film</a></li>
-                    </ul>
+                    <?php
+                    $menu = $vd->getMenuFile();
+                    require "$menu";
+                    ?>
                 </div>
-
-                <div class="container-body">
-                    <h1>Questa &egrave; la pagina di accesso al</br>
-                        progetto di Amministrazione di Sistema
-                    </h1>
-                </div>
+                <div id="content">
+                    <?php
+                    $content = $vd->getContentFile();
+                    require "$content";
+                    ?>
+            </div>
+            <div id="footer">
+                <a id="wikipedia" href="https://it.wikipedia.org/wiki/Film">Film Wikipedia</a>
+                <a id="comingsoon" href="http://www.comingsoon.it/cinema/filmalcinema/">Film al cinema</a>
             </div>
         </div>
-
-        <div class="footer">
-
-        </div>
-
     </body>
-
 </html>
+
