@@ -1,8 +1,7 @@
 <?php
 
 /**
- * Classe che contiene una lista di variabili di configurazione
- *
+ * Classe che contiene una lista di variabili di configurazione *
  * @author Davide Spano
  */
 class Settings {
