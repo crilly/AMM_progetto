@@ -24,7 +24,7 @@ h3 {
     color: white;
 }
 
-#logo {
+#content {
     height: 160px;
     width: 500px;
     padding: 10px 20px 30px 0px 
@@ -35,6 +35,10 @@ div.header {
     width: 500px;
     height: 200px;
     margin: 0 auto;
+}
+
+/*div.input-form{
+    
 }
 
 div.header, div.container, div.footer {	
@@ -51,7 +55,7 @@ div.container-body-right {
     min-width: 300px;
     padding-left: 30px;
 }
-
+*/
 #menu{
     color:hotpink;
     margin: auto;
