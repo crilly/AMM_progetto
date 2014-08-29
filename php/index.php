@@ -37,11 +37,11 @@ class FrontController {
                     }
                     $controller->handleInput($request);
                     break;
-                // dipendente
-                case 'dipendente':
+                // venditore
+                case 'venditore':
                     $controller = new VenditoreController();
                     if (isset($_SESSION[BaseController::role]) &&
-                            $_SESSION[BaseController::role] != User::Dipendente) {
+                            $_SESSION[BaseController::role] != User::Venditore) {
                         self::write403();
                     }
                     $controller->handleInput($request);
