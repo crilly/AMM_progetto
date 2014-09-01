@@ -48,7 +48,12 @@ class Film {
         }
         return false;
     }
-
+       
+    //Restituisce l'anno
+    public function getTitolo() {
+        return $this->titolo;
+    }
+    
     //Restituisce l'anno
     public function getAnno() {
         return $this->anno;
