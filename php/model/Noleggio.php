@@ -52,11 +52,6 @@ class Noleggio {
         return true;
     }
 
-    public function setIva($iva) {
-        $this->iva = $iva;
-        return true;
-    }
-
     public function setInizioNoleggio($inizioNoleggio) {
         $this->inizioNoleggio = $inizioNoleggio;
         return true;
