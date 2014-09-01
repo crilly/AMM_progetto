@@ -63,6 +63,7 @@ class FrontController {
         header('HTTP/1.0 404 Not Found');
         $titolo = "File non trovato!";
         $messaggio = "La pagina che hai richiesto non &egrave; disponibile";
+        include_once 'error.php';
         exit();
     }
 
@@ -76,6 +77,7 @@ class FrontController {
         $titolo = "Accesso negato";
         $messaggio = "Non hai i diritti per accedere a questa pagina";
         $login = true;
+        include_once 'error.php';
         exit();
     }
 }
