@@ -2,8 +2,8 @@
 
 include_once 'BaseController.php';
 include_once basename(__DIR__) . '/../model/UserFactory.php';
-include_once basename(__DIR__) . '/../model/Dvd.php';
-include_once basename(__DIR__) . '/../model/DvdFactory.php';
+include_once basename(__DIR__) . '/../model/Film.php';
+include_once basename(__DIR__) . '/../model/FilmFactory.php';
 
 /**
  * Controller del cliente
