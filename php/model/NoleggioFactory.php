@@ -171,7 +171,7 @@ values (?, ?, ?, ?, ?)";
             $mysqli->close();
             return 0;
         }
-// inizio la transazione
+        // inizio la transazione
         $mysqli->autocommit(false);
         if (!$stmt->execute()) {
             error_log("[nuovo] impossibile" .
@@ -180,50 +180,11 @@ values (?, ?, ?, ?, ?)";
             $mysqli->close();
             return 0;
         }
-//query eseguita correttamente, termino la transazione
+        //query eseguita correttamente, termino la transazione
         $mysqli->commit();
         $mysqli->autocommit(true);
         $mysqli->close();
         return $stmt->affected_rows;
     }
-
-    /**
-     * Restituisce un array contenente i noleggi fatti dal cliente passato
-     * @param Cliente $user
-     * @return array|\Noleggi
-     */
-    public function &noleggiPerCliente($user) {
-        $noleggi = array();
-        $query = "SELECT *
-FROM noleggi
-JOIN clienti ON idcliente = clienti.id
-JOIN veicoli ON idauto = veicoli.id
-WHERE noleggi.idcliente = ?";
-        $mysqli = Db::getInstance()->connectDb();
-        if (!isset($mysqli)) {
-            error_log("[noleggiPerCliente] impossibile inizializzare il database");
-            $mysqli->close();
-            return $noleggi;
-        }
-        $stmt = $mysqli->stmt_init();
-        $stmt->prepare($query);
-        if (!$stmt) {
-            error_log("[noleggiPerCliente] impossibile" .
-                    " inizializzare il prepared statement");
-            $mysqli->close();
-            return $noleggi;
-        }
-        if (!$stmt->bind_param("i", $user->getId())) {
-            error_log("[noleggiPerCliente] impossibile" .
-                    " effettuare il binding in input");
-            $mysqli->close();
-            return $noleggi;
-        }
-        $noleggi = self::caricaNoleggiDaStmt($stmt);
-        $mysqli->close();
-        return $noleggi;
-    }
-
 }
-
 ?>
