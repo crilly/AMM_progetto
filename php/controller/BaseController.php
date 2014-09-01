@@ -77,7 +77,7 @@ class BaseController {
      */
     protected function showLoginPage($vd) {
         // mostro la pagina di login
-        $vd->setTitolo("Videoteca Login");
+        $vd->setTitolo("Videoteca - Login");
         $vd->setLogoFile(basename(__DIR__) . '/../view/login/logo.php');
         $vd->setMenuFile(basename(__DIR__) . '/../view/login/menu.php');
         $vd->setContentFile(basename(__DIR__) . '/../view/login/content.php');
@@ -89,7 +89,7 @@ class BaseController {
      */
     protected function showHomeCliente($vd) {
         // mostro la home dei clienti
-        $vd->setTitolo("Videoteca Clienti");
+        $vd->setTitolo("Videoteca - Clienti");
         $vd->setLogoFile(basename(__DIR__) . '/../view/cliente/logo.php');
         $vd->setMenuFile(basename(__DIR__) . '/../view/cliente/leftBar.php');
         $vd->setContentFile(basename(__DIR__) . '/../view/cliente/content.php');
@@ -101,7 +101,7 @@ class BaseController {
      */
     protected function showHomeDipendente($vd) {
 // mostro la home dei dipendenti
-        $vd->setTitolo("Videoteca Venditori");
+        $vd->setTitolo("Videoteca - Venditori");
         $vd->setLogoFile(basename(__DIR__) . '/../view/dipendente/logo.php');
         $vd->setMenuFile(basename(__DIR__) . '/../view/dipendente/leftBar.php');
         $vd->setContentFile(basename(__DIR__) . '/../view/dipendente/content.php');
