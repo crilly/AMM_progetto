@@ -36,6 +36,15 @@ class Film {
         }
         $this->id = $intVal;
     }
+    
+    //Imposta il genere 
+    public function setGenere($genere) {
+        $varVal = filter_var($genere, FILTER_VALIDATE_var, FILTER_NULL_ON_FAILURE);
+        if (!isset($varVal)) {
+            return false;
+        }
+        $this->genere = $varVal;
+    }
 
     //Imposta l'anno
     public function setAnno($anno) {
