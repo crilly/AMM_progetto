@@ -95,102 +95,39 @@ class VenditoreController extends BaseController {
                             $msg[] = '<li> Inserire un genere valido </li>';
                         }
                         if (count($msg) == 0) {
-                            $vd->setSottoPagina('parco_auto');
-                            if (VeicoloFactory::instance()->nuovo($nuovo) != 1) {
-                                $msg[] = '<li> Impossibile creare il veicolo </li>';
+                            $vd->setSottoPagina('lista_film');
+                            if (FilmFactory::instance()->nuovo($nuovo) != 1) {
+                                $msg[] = '<li> Impossibile aggiungere il film </li>';
                             }
                         }
-                        $this->creaFeedbackUtente($msg, $vd, "Veicolo creato");
-                        $veicoli = VeicoloFactory::instance()->getVeicoli();
+                        $this->creaFeedbackUtente($msg, $vd, "Film aggiunto");
+                        $film = FilmFactory::instance()->getFilm();
                         $this->showHomeUtente($vd);
                         break;
-// cancella un veicolo
-                    case 'cancella_veicolo':
-                        if (isset($request['veicolo'])) {
-                            $intVal = filter_var($request['veicolo'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-                            if (isset($intVal)) {
-                                if (VeicoloFactory::instance()->cancellaPerId($intVal) != 1) {
-                                    $msg[] = '<li> Impossibile cancellare il veicolo </li>';
-                                }
-                                $this->creaFeedbackUtente($msg, $vd, "Veicolo eliminato");
-                            }
-                        }
-                        $veicoli = VeicoloFactory::instance()->getVeicoli();
-                        $this->showHomeUtente($vd);
-                        break;
-// default
+                    //Default
                     default:
                         $this->showHomeUtente($vd);
                         break;
                 }
             } else {
-// nessun comando, dobbiamo semplicemente visualizzare
-// la vista
-// nessun comando
+                //Nessun comando, dobbiamo semplicemente visualizzare la vista
                 $user = UserFactory::instance()->cercaUtentePerId(
                         $_SESSION[BaseController::user], $_SESSION[BaseController::role]);
                 $this->showHomeUtente($vd);
             }
         }
-// richiamo la vista
+        //Richiamo la vista
         require basename(__DIR__) . '/../view/master.php';
     }
 
     /**
-     * Aggiorna i dati relativi ad un appello in base ai parametri specificati
-     * dall'utente
-     * @param Appello $mod_appello l'appello da modificare
-     * @param array $request la richiesta da gestire
-     * @param array $msg array dove inserire eventuali messaggi d'errore
+     * Calcola l'id per un nuovo film
+     * @param array $film una lista di film
+     * @return int il prossimo id del film
      */
-    private function updateAppello($mod_appello, &$request, &$msg) {
-        if (isset($request['insegnamento'])) {
-            $insegnamento = InsegnamentoFactory::instance()->creaInsegnamentoDaCodice($request['insegnamento']);
-            if (isset($insegnamento)) {
-                $mod_appello->setInsegnamento($insegnamento);
-            } else {
-                $msg[] = "<li>Insegnamento non trovato</li>";
-            }
-        }
-        if (isset($request['data'])) {
-            $data = DateTime::createFromFormat("d/m/Y", $request['data']);
-            if (isset($data) && $data != false) {
-                $mod_appello->setData($data);
-            } else {
-                $msg[] = "<li>La data specificata non &egrave; corretta</li>";
-            }
-        }
-        if (isset($request['posti'])) {
-            if (!$mod_appello->setCapienza($request['posti'])) {
-                $msg[] = "<li>La capienza specificata non &egrave; corretta</li>";
-            }
-        }
-    }
-
-    /**
-     * Ricerca un apperllo per id all'interno di una lista
-     * @param int $id l'id da cercare
-     * @param array $appelli un array di appelli
-     * @return Appello l'appello con l'id specificato se presente nella lista,
-     * null altrimenti
-     */
-    private function cercaAppelloPerId($id, &$appelli) {
-        foreach ($appelli as $appello) {
-            if ($appello->getId() == $id) {
-                return $appello;
-            }
-        }
-        return null;
-    }
-
-    /**
-     * Calcola l'id per un nuovo appello
-     * @param array $appelli una lista di appelli
-     * @return int il prossimo id degli appelli
-     */
-    private function prossimoIdAppelli(&$appelli) {
+    private function prossimoIdFilm(&$film) {
         $max = -1;
-        foreach ($appelli as $a) {
+        foreach ($film as $a) {
             if ($a->getId() > $max) {
                 $max = $a->getId();
             }
@@ -199,60 +136,23 @@ class VenditoreController extends BaseController {
     }
 
     /**
-     * Restituisce il prossimo id per gli elenchi degli esami
-     * @param array $elenco un elenco di esami
-     * @return int il prossimo identificatore
-     */
-    private function prossimoIndiceElencoListe(&$elenco) {
-        if (!isset($elenco)) {
-            return 0;
-        }
-        if (count($elenco) == 0) {
-            return 0;
-        }
-        return max(array_keys($elenco)) + 1;
-    }
-
-    /**
-     * Restituisce l'identificatore dell'elenco specificato in una richiesta HTTP
-     * @param array $request la richiesta HTTP
-     * @param array $msg un array per inserire eventuali messaggi d'errore
-     * @return l'identificatore dell'elenco selezionato
-     */
-    private function getIdElenco(&$request, &$msg) {
-        if (!isset($request['elenco'])) {
-            $msg[] = "<li> Non &egrave; stato selezionato un elenco</li>";
-        } else {
-// recuperiamo l'elenco dalla sessione
-            $elenco_id = filter_var($request['elenco'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-            if (!isset($elenco_id) || !array_key_exists($elenco_id, $_SESSION[self::elenco]) || $elenco_id < 0) {
-                $msg[] = "L'elenco selezionato non &egrave; corretto</li>";
-                return null;
-            }
-            return $elenco_id;
-        }
-        return null;
-    }
-
-    /**
      * Restituisce l'appello specificato dall'utente tramite una richiesta HTTP
      * @param array $request la richiesta HTTP
      * @param array $msg un array dove inserire eventuali messaggi d'errore
      * @return Appello l'appello selezionato, null se non e' stato trovato
      */
-    private function getAppello(&$request, &$msg) {
-        if (isset($request['appello'])) {
-            $appello_id = filter_var($request['appello'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-            $appello = AppelloFactory::instance()->cercaAppelloPerId($appello_id);
-            if ($appello == null) {
-                $msg[] = "L'appello selezionato non &egrave; corretto</li>";
+    private function getFilm(&$request, &$msg) {
+        if (isset($request['film'])) {
+            $film_id = filter_var($request['film'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
+            $film = FilmFactory::instance()->cercaFilmPerId($film_id);
+            if ($film == null) {
+                $msg[] = "Il film selezionato non &egrave; corretto</li>";
             }
-            return $appello;
+            return $film;
         } else {
             return null;
         }
     }
-
 }
 
 ?>
