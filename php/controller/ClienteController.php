@@ -41,7 +41,7 @@ class ClienteController extends BaseController {
             // dalla vista, ed utilizzano le classi del modello
             if (isset($request["subpage"])) {
                 switch ($request["subpage"]) {
-                    // visualizzazione dei noleggi richiesti
+                 
                     //visualizzazione dell'elenco dei film
                     case 'film':
                         $film = FilmFactory::instance()->getFilm();
@@ -64,11 +64,9 @@ class ClienteController extends BaseController {
             }
         }
 
-
         //Includo la vista
         require basename(__DIR__) . '/../view/master.php';
     }
-
 }
 
 ?>
