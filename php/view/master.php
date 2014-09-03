@@ -1,6 +1,7 @@
 <?php
 include_once 'ViewDescriptor.php';
 include_once basename(__DIR__) . '/../Settings.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -48,9 +49,10 @@ include_once basename(__DIR__) . '/../Settings.php';
 </html>
 
 <?php
-header('Cache-Control: no-cache, must-revalidate');
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 
-$content = $vd->getContentFile();
-require "$content";
+    header('Cache-Control: no-cache, must-revalidate');
+    header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+
+    $content = $vd->getContentFile();
+    require "$content";
 ?>
