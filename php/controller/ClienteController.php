@@ -42,6 +42,11 @@ class ClienteController extends BaseController {
             if (isset($request["subpage"])) {
                 switch ($request["subpage"]) {
                  
+                    // visualizzazione dei noleggi richiesti
+                    case 'noleggi':
+                        $noleggi = NoleggioFactory::instance()->noleggiPerCliente($user);
+                        $vd->setSottoPagina('noleggi');
+                        break;                    
                     //visualizzazione dell'elenco dei film
                     case 'film':
                         $film = FilmFactory::instance()->getFilm();
