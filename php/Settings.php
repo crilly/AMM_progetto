@@ -40,8 +40,3 @@ class Settings {
 
 }
 ?>
-}
-return self::$appPath;
-}
-}
-?>
