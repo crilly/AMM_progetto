@@ -15,14 +15,14 @@ include_once basename(__DIR__) . '/../Settings.php';
     </head>
     <body>
         <div id="page">
-            
+
             <div id="header">
                 <?php
                 $logo = $vd->getLogoFile();
                 require "$header";
                 ?>
             </div>
-            
+
             <div id="menu">
                 <?php
                 $menu = $vd->getMenuFile();
@@ -36,13 +36,21 @@ include_once basename(__DIR__) . '/../Settings.php';
                 require "$content";
                 ?>
             </div>
-            
+
             <div id="footer">
                 <h6>Progetto di Amministrazione di Sistema<br/>di Cristin Sanna</h6>
                 <a id="WikipediaFilm" href="https://it.wikipedia.org/wiki/Film">Wikipedia Film</a> 
                 <a id="ComingSoon" href="http://www.comingsoon.it/cinema/filmalcinema/">Film al cinema</a>                
             </div>
-            
+
         </div>
     </body>
 </html>
+
+<?php
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+
+$content = $vd->getContentFile();
+require "$content";
+?>
