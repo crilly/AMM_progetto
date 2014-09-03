@@ -78,9 +78,9 @@ class BaseController {
     protected function showLoginPage($vd) {
         // mostro la pagina di login
         $vd->setTitolo("Videoteca - Login");
-        $vd->setLogoFile(basename(__DIR__) . '/../view/login/logo.php');
-        $vd->setMenuFile(basename(__DIR__) . '/../view/login/menu.php');
-        $vd->setContentFile(basename(__DIR__) . '/../view/login/content.php');
+        $vd->setLogoFile('/../view/login/logo.php');
+        $vd->setMenuFile('/../view/login/menu.php');
+        $vd->setContentFile('/../view/login/content.php');
     }
 
     /**
