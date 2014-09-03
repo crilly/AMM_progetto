@@ -1,5 +1,5 @@
 <?php
-include_once '.:/usr/share/php:/usr/share/pear';
+
 /**
  * Classe che contiene una lista di variabili di configurazione *
  * @author Davide Spano
