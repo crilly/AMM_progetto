@@ -102,9 +102,9 @@ class BaseController {
     protected function showHomeDipendente($vd) {
 // mostro la home dei dipendenti
         $vd->setTitolo("Videoteca - Venditori");
-        $vd->setLogoFile(basename(__DIR__) . '/../view/dipendente/logo.php');
-        $vd->setMenuFile(basename(__DIR__) . '/../view/dipendente/leftBar.php');
-        $vd->setContentFile(basename(__DIR__) . '/../view/dipendente/content.php');
+        $vd->setLogoFile(basename(__DIR__) . '/../view/venditore/logo.php');
+        $vd->setMenuFile(basename(__DIR__) . '/../view/venditore/menu.php');
+        $vd->setContentFile(basename(__DIR__) . '/../view/venditore/content.php');
     }
 
     /**
