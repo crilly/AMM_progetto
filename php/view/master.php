@@ -8,7 +8,8 @@ include_once '../Settings.php';
 
 <html>
     <head>
-        <title><?= $vd->getTitolo() ?></title>
+        <!--<title><?= $vd->getTitolo() ?></title>-->
+        <title>Ciao</title>
         <base href="<?= Settings::getApplicationPath() ?>php/"/>
         <link href="../css/stile.css" rel="stylesheet" type="text/css"/>
         <link type="image/x-icon" href="../immagini/titolo.png" />

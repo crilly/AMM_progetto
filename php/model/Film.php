@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Classe che rappresenta un film *
+ * Classe che rappresenta un film
  * @author Cristin Sanna
  */
 class Film {
@@ -37,15 +37,6 @@ class Film {
         $this->id = $intVal;
     }
     
-    //Imposta il genere 
-    public function setGenere($genere) {
-        $varVal = filter_var($genere, FILTER_VALIDATE_var, FILTER_NULL_ON_FAILURE);
-        if (!isset($varVal)) {
-            return false;
-        }
-        $this->genere = $varVal;
-    }
-
     //Imposta l'anno
     public function setAnno($anno) {
         $intVal = filter_var($anno, FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
