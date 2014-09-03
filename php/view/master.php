@@ -1,6 +1,6 @@
 <?php
 include_once 'ViewDescriptor.php';
-include_once dirname(__FILE__).'../Settings.php';
+include_once dirname(dirname(__FILE__).'../Settings.php');
 
 ?>
 
