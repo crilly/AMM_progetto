@@ -37,8 +37,8 @@ while ($q_film = mysqli_fetch_array($risultato)) {
     print(" <td><a href=\"prenota.php?codice=$ID\">$ID</A></td> ");
     print(" <td>$titolo</td> ");
     print(" <td>$regista</td> ");
-    print(" <td>$genere</td> ");
     print(" <td>$anno</td> ");
+    print(" <td>$genere</td> ");
     print(" <td>$prezzo &#128; </td></tr> ");
 }
 print("</table>");
