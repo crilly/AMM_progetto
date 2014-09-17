@@ -7,7 +7,7 @@ include("header.php");
    
 include("testoiniziale.php"); ?>
       
-<p>Benvenuto nella Videoteca Online!</br>Accedi se sei gia' registrato o registrati!</p>
+<p>Benvenuto nella Videoteca Online!</br>Accedi se sei gi&agrave; registrato o registrati!</p>
       
 <?php
   
