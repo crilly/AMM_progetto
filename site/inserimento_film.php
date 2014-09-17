@@ -12,9 +12,9 @@ include("header.php");
         <table align="center">
             <tr><td>Titolo :</td><td><input type="text" name="Nome"></td>
             <tr><td>Regista :</td><td><input type="text" name="Cognome"> </td>
-            <tr><td>Regista :</td><td><input type="text" name="Cognome"> </td>
-            <tr><td>Regista :</td><td><input type="text" name="Cognome"> </td>
-            <tr><td>Regista :</td><td><input type="text" name="Cognome"> </td> 
+            <tr><td>Anno :</td><td><input type="text" name="Cognome"> </td>
+            <tr><td>Genere :</td><td><input type="text" name="Cognome"> </td>
+            <tr><td>Prezzo :</td><td><input type="text" name="Cognome"> </td> 
 
         </table>
 
