@@ -1,1 +1,0 @@
-<link type="image/x-icon" href="../immagini/titolo.png" />
