@@ -2,7 +2,7 @@
 <html>
     <head>
         
-<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
         <meta http-equiv="Content-Language" content="it" /> 
         <title>Videoteca Online</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
