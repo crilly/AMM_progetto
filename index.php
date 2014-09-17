@@ -44,7 +44,7 @@
     <li>Utilizzo di PHP e MySQL</li>
     <li>Due ruoli (cliente e amministratore)</li>
     <li>Transazione per il salvataggio di un nuovo noleggio (nelle pagine prenota.php / verifica_prenotazione.php)</li>
-    <li>Contenuto AJAX nella pagina iniziale index.php (testo animato)</li>
+    <li>Contenuto AJAX nella pagina iniziale (testo animato, nel file testoiniziale.php)</li>
 </ol>
 </p>
 <p>
