@@ -37,8 +37,8 @@
 <p>
 <h3>Requisiti soddisfatti</h3>
 <ol>
-    <li>1) Utilizzo di HTML e CSS</li>
-    <li>2) Utilizzo di PHP e MySQL</li>
+    <li>Utilizzo di HTML e CSS</li>
+    <li>Utilizzo di PHP e MySQL</li>
     <li>Due ruoli (cliente e amministratore)</li>
     <li>Transazione per il salvataggio di un nuovo noleggio (nelle pagina prenota.php / verifica_prenotazione.php)</li>
     <li>Contenuto AJAX nella pagina iniziale index.php (testo animato)</li>
