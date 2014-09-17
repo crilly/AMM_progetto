@@ -1,0 +1,60 @@
+body {
+	text-align: center; /* IE5.x */
+	padding: 0;
+	margin: 0;
+	}
+
+#telaio {
+	width:100%;
+	margin: 0px;
+	border:1px solid gray;
+	line-height:150%;
+	color: black;
+	background-color: #ffffcc;
+	text-align: left; /* IE5.x */
+	
+	}
+
+#testata {
+	font-size: 130%;
+	}
+
+
+#fondo {
+	font-size: 85%;
+	text-align: center;
+	}
+
+
+#testata, #fondo {
+	padding:0.5em;
+	color:white;
+	background-color: #cc9900;
+	clear:left;
+	}
+
+
+#sinistro {
+	float:left;
+	width:250px;
+	margin: 15px;
+	padding: 5px;
+	text-align:center;
+/*	background-color: grey; */
+	}
+	
+#sinistro td {border:0px solid black; }	
+
+#centrale {
+	margin-left: 280px;
+	border-left:4px solid gray;
+	padding-top:10px; 
+	min-height: 80%;
+	text-align:center;
+	}
+	
+	#centrale table,td{
+ align:central;
+  border:1px solid black;
+  	text-align:center;
+	}
