@@ -16,7 +16,7 @@ if ($livello > 1) {
     print("Cliccare sul codice per cancellare il film");
 } else {
     if ($livello == 0) {
-        print("Per prenotare e' necessario registrarsi");
+        print("Per prenotare &egrave necessario registrarsi");
     } else {
         print("Cliccare sul codice per prenotare il film");
     }
