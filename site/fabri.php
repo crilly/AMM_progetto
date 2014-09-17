@@ -55,4 +55,4 @@ INSERT INTO `utente` (`ID`, `username`, `password`, `livello`) VALUES
 (3, 'Cristin', '0000', 1),
 (5, 'lau', 'lau', 1);
 
-?>                      /*
+?>                      */
