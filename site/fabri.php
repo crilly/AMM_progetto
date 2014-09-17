@@ -1,5 +1,5 @@
 <?php
-
+/*
 include("config.php"); 
        $a1="
      CREATE TABLE IF NOT EXISTS `film` (
@@ -23,8 +23,9 @@ $a2="INSERT INTO `film` (`ID`, `titolo`, `regista`, `anno`, `genere`, `prezzo`) 
 
                if($ris1) {print("V");} ELSE {print("X");}
               if($ris2) {print("V");}  ELSE {print("X");}
-   
-     /*
+   */
+    
+   $a1="
 CREATE TABLE IF NOT EXISTS `noleggio` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `id_cliente` int(11) NOT NULL,
@@ -33,14 +34,19 @@ CREATE TABLE IF NOT EXISTS `noleggio` (
   `fine_noleggio` date NOT NULL,
   PRIMARY KEY (`ID`)
 ) 
+ ;";
 
-
+ $ris1=mysqli_query($conn,$a1);
+ $a2="
 INSERT INTO `noleggio` (`ID`, `id_cliente`, `id_film`, `inizio_noleggio`, `fine_noleggio`) VALUES
 (2, 3, 3, '2014-09-17', '2014-09-17'),
 (3, 3, 2, '2014-09-17', '2014-09-17'),
 (5, 3, 1, '2014-09-17', '2014-10-17');
 
+ ;";
 
+ $ris2=mysqli_query($conn,$a2);
+ $a3="    
 CREATE TABLE IF NOT EXISTS `utente` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
@@ -49,10 +55,21 @@ CREATE TABLE IF NOT EXISTS `utente` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
+ ;";
 
+ $ris3=mysqli_query($conn,$a3);
+ $a4="
 INSERT INTO `utente` (`ID`, `username`, `password`, `livello`) VALUES
 (1, 'admin', 'admin', 2),
 (3, 'Cristin', '0000', 1),
 (5, 'lau', 'lau', 1);
+;";
 
-?>                      */
+ $ris4=mysqli_query($conn,$a4);
+ 
+   if($ris1) {print("V");} ELSE {print("X");}
+              if($ris2) {print("V");}  ELSE {print("X");}
+                if($ris3) {print("V");} ELSE {print("X");}
+              if($ris4) {print("V");}  ELSE {print("X");}
+ 
+?>  
