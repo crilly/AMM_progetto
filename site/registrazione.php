@@ -23,6 +23,7 @@ include("header.php");
 
     <button type="submit">
         REGISTRATI
-    </button>  </form>  
+    </button> 
+</form>  
 <?php
 include("down.php");
