@@ -40,7 +40,7 @@ if (isset($_SESSION['ID'])) {
     }
 }
 ?> 
-<BR>      
+<br>      
 </body>
 </html> 
 
