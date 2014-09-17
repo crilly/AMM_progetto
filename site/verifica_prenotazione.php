@@ -34,8 +34,4 @@ if ($ris2) {
 }
 
 
-
-
-
-
 include("down.php");

@@ -44,7 +44,7 @@ if ($livello > 1) {
         print(" <td>$nomeutente</td> ");
         print(" <td>$data1</td> ");
         print(" <td>$data2</td> ");
-        print(" <td>$prezzofilm &#128;</td></tr> ");
+        print(" <td>$prezzofilm &#128; </td></tr> ");
     }
     print("</table>");
 } else {
@@ -83,7 +83,7 @@ if ($livello > 1) {
         print(" <td>$titolofilm</td> ");
         print(" <td>$data1</td> ");
         print(" <td>$data2</td> ");
-        print(" <td>$prezzofilm �</td></tr> ");
+        print(" <td>$prezzofilm &#128; </td></tr> ");
     }
     print("</table>");
 }
