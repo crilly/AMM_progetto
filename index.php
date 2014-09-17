@@ -50,13 +50,14 @@
     <li>Cliente
         <ul>
             <li>username: cristin</li>
-            <li>passowrd: 0000</li>
+            <li>password: 0000</li>
         </ul>
     </li>
+    </br>
     <li>Amministratore
         <ul>
             <li>username: admin</li>
-            <li>passowrd: admin</li>
+            <li>password: admin</li>
         </ul>
     </li>
 </ul>
