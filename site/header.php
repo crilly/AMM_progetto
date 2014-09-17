@@ -1,10 +1,9 @@
 <!DOCTYPE>
 <html>
     <head>
-
         
-        <meta http-equiv="Content-Language" content="it" />
-        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-2" /> 
+        <meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Language" content="it" /> 
         <title>Videoteca Online</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -43,8 +42,8 @@
                         </table><center><button type="submit"> ACCEDI  </button> </center>
                     </form>
                     <br> Oppure <a href="registrazione.php">Registrati</a>
-                <?php }
-                ?>
+<?php }
+?>
             </div>
             <div id="centrale">
 
