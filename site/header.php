@@ -27,7 +27,7 @@
                     $nomeu = $_SESSION['USER'];
                     if ($livello > 1) {
                         print("<H3>Admin loggato</H3>");
-                        print("<a href=\"aggiungi_film.php\">Aggiungi FILM</a><br>");
+                        print("<a href=\"aggiungi_film.php\">Aggiungi film</a><br>");
                         print("<a href=\"prenotazioni.php\">Lista prenotazioni</a><br>");
                         print("<a href=\"utenti.php\">Lista utenti</a><br>");
                     } else {
