@@ -2,7 +2,6 @@
 session_start();
 include("config.php");
 
-
 include("header.php");
 ?>
 <H1>INSERIMENTO FILM</H1> 
