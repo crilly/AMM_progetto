@@ -1,6 +1,7 @@
 <?php
-/*
 include("config.php"); 
+/*
+
        $a1="
      CREATE TABLE IF NOT EXISTS `film` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
