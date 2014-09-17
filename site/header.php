@@ -31,7 +31,7 @@
                         print("<a href=\"prenotazioni.php\">Lista prenotazioni</a><br>");
                         print("<a href=\"utenti.php\">Lista utenti</a><br>");
                     } else {
-                        print("<H3>$nomeu - loggato</H3>");
+                        print("<H3>$nomeu loggato</H3>");
                         print("<a href=\"prenotazioni.php\">Le mie prenotazioni</a><br>");
                     }
                     print("<A href=\"logout.php\">Esci</a>");
