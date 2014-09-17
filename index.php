@@ -31,6 +31,9 @@
     <h3>Note:</h3>
     <ol>
         <li>Implementazione del sistema di registrazione</li>
+        <li>Nel caso in cui si effettui l'accesso con l'user admin, cliccando sul codice del film, questo non verrà prenotato ma eliminato.</li> 
+        <li>Nel caso in cui si effettui l'accesso con l'user admin, cliccando sul codice dell'utente, questo verrà eliminato. </li>
+        <li>Nel caso in cui si effettui l'accesso con l'user admin, cliccando sul codice della prenotazione, questa verrà eliminata. </li>
     </ol>
 </p>
 
