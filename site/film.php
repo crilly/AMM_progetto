@@ -1,8 +1,8 @@
 <?php
 session_start(); 
-include("config.php"); 
+include("config.php");
 
-                 
+
 include("header.php");  
    
  $q_film="SELECT * from film order by titolo";
@@ -16,7 +16,7 @@ include("header.php");
    else
    {
     if($livello==0) 
-    {   print("Per prenotare è necessario registrarsi");}
+    {   print("Per prenotare ï¿½ necessario registrarsi");}
     else { print("Cliccare sul codice per prenotare il film");}  }
    
    print("<table align=\"center\" cellpadding=2> ") ;
@@ -38,7 +38,7 @@ include("header.php");
       print(" <td>$regista</td> "); 
        print(" <td>$genere</td> "); 
         print(" <td>$anno</td> "); 
-         print(" <td>$prezzo €</td></tr> ");  
+         print(" <td>$prezzo ï¿½</td></tr> ");  
   }
         print("</table>");     
                  

@@ -12,52 +12,51 @@
         <p>
         <h3>Descrizione</h3>
         L'applicazione simula una videoteca dalla quale è possibile noleggiare dei film. Gli utenti sono divisi in amministratori e clienti.</br>
-        I dipendenti possono:
+        Gli amministratori possono:
         <ul>
-            <li>Visualizzare il parco auto</li>
-            <li>Aggiungere veicoli al parco auto</li>
-            <li>Rimuovere veicoli dal parco auto</li>
+            <li>Visualizzare l'elenco dei film</li>
+            <li>Aggiungere film</li>
+            <li>Rimuovere film</li>
             <li>Visualizzare lo storico prenotazioni di tutti gli utenti</li>
-            <li>Gestire la propria anagrafica</li>
+            <li>Cancellare gli utenti</li>
         </ul>
         I clienti possono:
         <ul>
-            <li>Visualizzare il parco auto</li>
+            <li>Visualizzare l'elenco dei film</li>
             <li>Registrare un noleggio</li>
             <li>Visualizzare lo storico dei propri noleggi</li>
         </ul>
     </p>
     <p>
-    <h3>Note</h3>
-    <ul>
-        <li>Le date sono nel formato Y-m-d</li>
-        <li>Il costo giornaliero è una caratteristica del modello di veicolo, non del singolo veicolo</li>
-    </ul>
+    <h3>Note:</h3>
+    <ol>
+        <li>Implementazione del sistema di registrazione</li>
+    </ol>
 </p>
+
 <p>
 <h3>Requisiti soddisfatti</h3>
 <ol>
-    <li>Utilizzo di HTML e CSS</li>
-    <li>Utilizzo di PHP e MySQL</li>
-    <li>Utilizzo del pattern MVC</li>
-    <li>Dueue ruoli (cliente e dipendente)</li>
-    <li>Transazione per il salvataggio di un nuovo noleggio (metodo nuovo della classe NoleggioFactory)</li>
-    <li>Caricamento ajax dei risultati filtrati dello storico dei noleggi (ruolo dipendente)</li>
+    <li>1) Utilizzo di HTML e CSS</li>
+    <li>2) Utilizzo di PHP e MySQL</li>
+    <li>Due ruoli (cliente e amministratore)</li>
+    <li>Transazione per il salvataggio di un nuovo noleggio (nelle pagina prenota.php / verifica_prenotazione.php)</li>
+    <li>Contenuto AJAX nella pagina iniziale index.php (testo animato)</li>
 </ol>
 </p>
 <p>
 <h3>Utenti</h3>
 <ul>
-    <li>Dipendente
-        <ul>
-            <li>username: stefano</li>
-            <li>passowrd: stefano</li>
-        </ul>
-    </li>
     <li>Cliente
         <ul>
-            <li>username: davide</li>
-            <li>passowrd: davide</li>
+            <li>username: cristin</li>
+            <li>passowrd: 0000</li>
+        </ul>
+    </li>
+    <li>Amministratore
+        <ul>
+            <li>username: admin</li>
+            <li>passowrd: admin</li>
         </ul>
     </li>
 </ul>

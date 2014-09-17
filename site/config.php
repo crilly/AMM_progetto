@@ -1,17 +1,11 @@
-<?php 
-    
-    
-   $Host="localhost"; //Nome Host.
-$User="sannaCristin"; //Username PHP-MyAdmin.
-$Password="criceto846"; //PassWord.
-$db="amm14_sannaCristin"; //Nome DataBase.
+<?php
 
-/* $Host="localhost"; //Nome Host.
-$User="admin"; //Username PHP-MyAdmin.
-$Password="admin"; //PassWord.
-$db="videoteca"; //Nome DataBase. */
+$Host = "localhost"; 
+$User = "sannaCristin"; 
+$Password = "criceto846"; 
+$db = "amm14_sannaCristin";
 
-$conn=mysqli_connect($Host,$User,$Password); //Effettua la connessione.
-$r=mysqli_select_db($conn,$db); //Seleziona il database.
-   
+
+$conn = mysqli_connect($Host, $User, $Password); //Effettua la connessione.
+$r = mysqli_select_db($conn, $db); //Seleziona il database.
 ?>
