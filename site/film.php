@@ -38,7 +38,7 @@ include("header.php");
       print(" <td>$regista</td> "); 
        print(" <td>$genere</td> "); 
         print(" <td>$anno</td> "); 
-         print(" <td>$prezzo € </td></tr> ");  
+         print(" <td>$prezzo &#128; </td></tr> ");  
   }
         print("</table>");     
                  
